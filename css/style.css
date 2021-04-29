@@ -8,6 +8,10 @@
 html{
     font-size: 62.5%;/* 1 REM = 10px*/
 }
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
 
 /**GLOBAL**/
 
@@ -23,6 +27,45 @@ h3, h4{
 p{
     font-size: 1.7rem;
 }
+/**UTILIDADES**/
+.centrar-texto{
+    text-align: center;
+}
+.fw-300{
+    font-weight: 300;
+}
+.linea-media::after{
+    content: '';
+    display: block;
+    width: 50rem;
+    height: 0.3rem;
+    background-color: #6ddad3;
+    margin-top: 1rem;
+    margin: auto;
+   
+}
+
+.contenedor{
+    max-width: 80%;
+    margin: auto;
+}
+.margin-section{
+    margin: 2rem auto 2rem auto;
+}
+
+.boton {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    }
+.boton-color1{
+    background-color: #00587a;
+}
 
 /**HEADER**/
 
@@ -33,6 +76,7 @@ p{
 }
 .logo-header{
     padding: 1.5rem;
+    align-items: center;
     
 }
 .navbar-brand{
@@ -46,5 +90,55 @@ p{
 }
 .nav-link:hover{
     color: #6ddad3!important;
+}
+
+/**SECCION SOBRE NOSOTROS MAIN**/
+
+.icon-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    flex-basis: calc(33.3% -1rem);
+    text-align: center;
+
+}
+
+.icon i{
+    font-size: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+/**Trabajos**/
+.imagen-trabajos{
+    background-image: url(../img/hogar-3.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+.contenido-trabajos{
+ flex: 1;
+}
+.contenido-trabajos h3{
+    
+    color: white;   
+}
+.contenido-trabajos p{
+    color: white;
+    font-size: 1.8rem;  
+}
+.transition-3s{
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.contenido-trabajos a:hover{
+    color: #6ddad3;
+    background-color: #132235;
 }
 
