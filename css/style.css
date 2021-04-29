@@ -1,0 +1,49 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*RESET REMS*/
+html{
+    font-size: 62.5%;/* 1 REM = 10px*/
+}
+
+/**GLOBAL**/
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.4rem;
+}
+h3, h4{
+    font-size: 2.6rem;
+}
+p{
+    font-size: 1.7rem;
+}
+
+/**HEADER**/
+
+/**NAVBAR**/
+.bg-light{
+    background-color: #132235!important;
+    height: 8rem;
+}
+.logo-header{
+    padding: 1.5rem;
+}
+.navbar-brand{
+    width: 70%!important;
+}
+.nav-link{
+    font-size: 1.8rem!important;
+    color: #fafafa!important;
+    font-weight: 450;
+
+}
+.nav-link:hover{
+    color: #6ddad3!important;
+}
+
