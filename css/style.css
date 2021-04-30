@@ -1,4 +1,7 @@
 /*RESET*/
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -140,4 +143,54 @@ p {
 .contenido-trabajos a:hover {
   color: #6ddad3;
   background-color: #132235;
+}
+
+/*
+HERO SECTION
+*/
+.bg-hero {
+  width: 100%;
+  height: 400px;
+  background-image: -moz-linear-gradient(top, #132235, rgba(255, 252, 179, 0)),
+    url("/img/hero.jpeg");
+  background-image: -o-linear-gradient(top, #132235, rgba(255, 252, 179, 0)),
+    url("/img/hero.jpeg");
+  background-image: -webkit-linear-gradient(
+      top,
+      #132235,
+      rgba(255, 252, 179, 0)
+    ),
+    url("/img/hero.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bg-hero a:hover {
+  color: #6ddad3;
+  background-color: #132235;
+}
+
+.bg-hero h1 {
+  color: white;
+  text-shadow: 3px 3px 3px #333;
+  text-align: center;
+  font-size: 5em;
+}
+
+.bg-hero h4 {
+  color: white;
+  text-shadow: 2px 2px 2px #333;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Work Sans", sans-serif;
+}
+
+.bg-hero .boton {
+  font-family: "Work Sans", sans-serif;
 }
