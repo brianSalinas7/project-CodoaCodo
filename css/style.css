@@ -216,5 +216,29 @@ HERO SECTION
   width: 40%;
   margin-top: 2rem;
 }
+/**FOOTER**/
 
+.footer {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.background-footer {
+  background-color: var(--dark-blue);
+}
+
+.fab {
+  color: var(--booton-blue);
+  font-size: 4rem;
+  margin: 2rem;
+  
+}
+.fab:hover {
+  color: var(--turquoise);
+  
+}
+.navegador-footer {
+  display: flex!important;
+}
 
