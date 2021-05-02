@@ -197,3 +197,15 @@ HERO SECTION
 .bg-hero .boton {
   font-family: "Work Sans", sans-serif;
 }
+/**SECCION LINEAS PERFILES**/
+.perfileria {
+  display: flex;
+  justify-content: space-around;
+}
+
+.perfileria p{
+  width: 40%;
+  margin-top: 2rem;
+}
+
+
