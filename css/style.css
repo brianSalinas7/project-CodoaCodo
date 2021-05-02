@@ -7,10 +7,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+/**COLORS**/
+:root{
+  --dark-blue: #132235;
+  --booton-blue: #00587a;
+  --turquoise: #6ddad3;
+  --white: #ffffff;
+  --shadow: #333;
+}
 /*RESET REMS*/
 html {
   font-size: 62.5%; /* 1 REM = 10px*/
 }
+
 body {
   font-family: "Lato", sans-serif;
   line-height: 2;
@@ -43,7 +52,7 @@ p {
   display: block;
   width: 50rem;
   height: 0.3rem;
-  background-color: #6ddad3;
+  background-color: var(--turquoise);
   margin-top: 1rem;
   margin: auto;
 }
@@ -60,7 +69,7 @@ p {
 }
 
 .boton {
-  color: #ffffff;
+  color: var(--white);
   font-weight: 700;
   text-decoration: none;
   font-size: 1.8rem;
@@ -70,14 +79,14 @@ p {
   text-align: center;
 }
 .boton-color1 {
-  background-color: #00587a;
+  background-color: var(--booton-blue);
 }
 
 /**HEADER**/
 
 /**NAVBAR**/
 .bg-light {
-  background-color: #132235 !important;
+  background-color: var(--dark-blue) !important;
 }
 .logo-header {
   padding: 1.5rem;
@@ -86,11 +95,11 @@ p {
 
 .nav-link {
   font-size: 1.8rem !important;
-  color: #fafafa !important;
+  color: var(--white) !important;
   font-weight: 450;
 }
 .nav-link:hover {
-  color: #6ddad3 !important;
+  color: var(--turquoise) !important;
 }
 
 .nav-flex {
@@ -130,10 +139,10 @@ p {
   flex: 1;
 }
 .contenido-trabajos h3 {
-  color: white;
+  color: var(--white);
 }
 .contenido-trabajos p {
-  color: white;
+  color: var(--white);
   font-size: 1.8rem;
 }
 .transition-3s {
@@ -144,8 +153,8 @@ p {
   -o-transition: 0.3s;
 }
 .contenido-trabajos a:hover {
-  color: #6ddad3;
-  background-color: #132235;
+  color: var(--turquoise);
+  background-color: var(--dark-blue);
 }
 
 /*
@@ -175,20 +184,20 @@ HERO SECTION
 }
 
 .bg-hero a:hover {
-  color: #6ddad3;
-  background-color: #132235;
+  color: var(--turquoise);
+  background-color: var(--dark-blue);
 }
 
 .bg-hero h1 {
-  color: white;
-  text-shadow: 3px 3px 3px #333;
+  color: var(--white);
+  text-shadow: 3px 3px 3px var(--shadow);
   text-align: center;
   font-size: 5em;
 }
 
 .bg-hero h4 {
   color: white;
-  text-shadow: 2px 2px 2px #333;
+  text-shadow: 2px 2px 2px var(--shadow);
   text-align: center;
   font-size: 2em;
   font-family: "Work Sans", sans-serif;
