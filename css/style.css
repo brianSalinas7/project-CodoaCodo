@@ -249,4 +249,7 @@ HERO SECTION
 .navegador-footer a:last-of-type{
   margin-right: 0;
 }
-
+.logo-footer {
+  display: block;
+  justify-content: center;
+}
