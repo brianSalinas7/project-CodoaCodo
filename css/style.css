@@ -239,6 +239,14 @@ HERO SECTION
   
 }
 .navegador-footer {
-  display: flex!important;
+  display: flex;
+  flex-direction: row;
+  
+}
+.navegador-footer a{
+  margin-right: 1.5rem;
+}
+.navegador-footer a:last-of-type{
+  margin-right: 0;
 }
 
