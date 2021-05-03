@@ -45,18 +45,18 @@
         <h4>Mamparas, Puertas y Ventanas</h4>
         <a class="boton boton-color1 transition-3s" href="#about-us">Conozca más</a>
       </section>          
-        <section id="about-us"><!--inicio seccion de iconos "sobre nosotros" -->
+        <section class="container-fluid" id="about-us"><!--inicio seccion de iconos "sobre nosotros" -->
             <h2 class="centrar-texto fw-300 linea-media margin-section">Sobre Nosotros</h2>
-          <div class="icon-nosotros contenedor margin-top5">
-            <div class="icon">
+          <div class="icon-nosotros contenedor margin-top5 row">
+            <div class="icon col-md-4 col-sm-4">
               <i class="fas fa-lock"></i>
               <p>Cambie eestot amet consectetur adipisicing elit. Odit minima iure explicabo iusto ipsa dignissimos molestiae incidunt optio excepturi ipsam debitis hic voluptates, velit error deleniti rem nesciunt illo temporibus!</p>
             </div>
-            <div class="icon">
+            <div class="icon col-md-4 col-sm-4">
               <i class="fas fa-coins"></i>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse corporis alias tenetur veniam minima molestias eligendi eaque repellendus rerum magni, placeat quasi odit, suscipit culpa, amet sint facere accusamus ducimus.</p>
             </div>
-            <div class="icon">
+            <div class="icon col-md-4 col-sm-4">
               <i class="fas fa-clock"></i>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, accusamus! Dignissimos quos corporis magni sed dolorem distinctio facilis voluptate! Necessitatibus voluptatum amet iste id commodi dicta nemo eos dolorem minus!</p>
             </div>
@@ -74,38 +74,41 @@
 
         </section>
 
-        <section class="contenedor margin-section">
+        <section class="contenedor margin-section container-fluid">
           <h2 class="centrar-texto fw-300 linea-media margin-section">Diversidad en perfileria </h2>
-          <div class="perfileria margin-top5">
-            <img src="./img/modena.jpg" alt="modena">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequatur adipisci rerum velit tenetur maxime laboriosam, illo exercitationem, debitis neque qui omnis temporibus commodi </p>
+          <div class="perfileria margin-top5 row">
+            <img class="col-md-3" src="./img/modena.jpg" alt="modena">
+            <p class="col-md-9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequatur adipisci rerum velit tenetur maxime laboriosam, illo exercitationem, debitis neque qui omnis temporibus commodi </p>
           </div>
-          <div class="perfileria margin-top5">
-            <img src="./img/piel de vidrio.jfif" alt="pielvidrio">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequatur adipisci rerum velit tenetur maxime laboriosam, illo exercitationem, debitis neque qui omnis temporibus commodi </p>
+          <div class="perfileria margin-top5 row">
+            <img class="col-md-3" src="./img/piel de vidrio.jfif" alt="pielvidrio">
+            <p class="col-md-9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequatur adipisci rerum velit tenetur maxime laboriosam, illo exercitationem, debitis neque qui omnis temporibus commodi </p>
           </div>
-          <div class="perfileria margin-top5">
-            <img src="./img/herrero.jpg" alt="linea-herrero">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequatur adipisci rerum velit tenetur maxime laboriosam, illo exercitationem, debitis neque qui omnis temporibus commodi </p>
+          <div class="perfileria margin-top5 row">
+            <img class="col-md-3" src="./img/herrero.jpg" alt="linea-herrero">
+            <p class="col-md-9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequatur adipisci rerum velit tenetur maxime laboriosam, illo exercitationem, debitis neque qui omnis temporibus commodi </p>
           </div>
-
         </section> 
         
       </main>
-      <footer class="background-footer">
-        <div class="footer contenedor" >
-            <div>
+      <footer class="background-footer container-fluid">
+        <div class="footer contenedor row" >
+            <div class="col-md-3 d-flex justify-content-center">
               <i class="fab fa-instagram-square transition-3s"></i>
               <i class="fab fa-facebook-square transition-3s"></i>
             </div>
+          <div class="col-md-4 d-flex justify-content-center">
             <a class="navbar-brand logo-footer" href="/"><img class="logo-header" src="./img/logo-header.png" alt=""></a>
-          <nav class="navbar-nav navegador-footer">
-                  <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
-                  <a class="nav-link" href="obras.html">Obras</a>
-                  <a class="nav-link" href="servicios.html">Servicios</a>
-                  <a class="nav-link" href="contacto.html">Contacto</a>
+          </div>
+          <div class="col-md-5 align-items-center">
+            <nav class="navbar-nav navegador-footer">
+                    <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+                    <a class="nav-link" href="obras.html">Obras</a>
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                    <a class="nav-link" href="contacto.html">Contacto</a>
 
-          </nav>
+            </nav>
+          </div>
         </div>
       </footer>
 
