@@ -70,6 +70,9 @@ p {
 .margin-section {
   margin-top: 10rem;
 }
+.margin-section-bottom{
+  margin-bottom: 10rem;
+}
 .margin-top5 {
   margin: 5rem auto 5rem auto;
 }
@@ -259,4 +262,21 @@ HERO SECTION
 .logo-footer {
   display: block;
   justify-content: center;
+}
+
+/** SOBRE NOSOYTOS **/
+
+.nosotros-content {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.nosotros-content img {
+  align-items: center;
+}
+
+.parrafo-nosotros {
+  margin: 1rem auto;
+  width: 70%;
+  
 }
