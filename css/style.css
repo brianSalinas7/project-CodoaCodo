@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 /**COLORS**/
-:root{
+:root {
   --dark-blue: #132235;
   --booton-blue: #00587a;
   --turquoise: #6ddad3;
@@ -57,6 +57,12 @@ p {
   margin: auto;
 }
 
+@media (max-width: 600px) {
+  .linea-media::after {
+    width: 100%;
+  }
+}
+
 .contenedor {
   max-width: 80%;
   margin: auto;
@@ -65,7 +71,7 @@ p {
   margin-top: 10rem;
 }
 .margin-top5 {
-    margin: 5rem auto 5rem auto;
+  margin: 5rem auto 5rem auto;
 }
 
 .boton {
@@ -133,6 +139,7 @@ p {
   background-size: cover;
   height: 40rem;
   display: flex;
+  background-attachment: fixed;
   align-items: center;
 }
 .contenido-trabajos {
@@ -212,14 +219,17 @@ HERO SECTION
   justify-content: space-around;
 }
 
-.perfileria p{
-  width: 40%;
+.perfileria p {
+  /*width: 40%;*/
   margin-top: 2rem;
+}
+
+.perfileria img {
+  max-width: fit-content;
 }
 /**FOOTER**/
 
 .footer {
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -232,21 +242,18 @@ HERO SECTION
   color: var(--booton-blue);
   font-size: 4rem;
   margin: 2rem;
-  
 }
 .fab:hover {
   color: var(--turquoise);
-  
 }
 .navegador-footer {
   display: flex;
   flex-direction: row;
-  
 }
-.navegador-footer a{
+.navegador-footer a {
   margin-right: 1.5rem;
 }
-.navegador-footer a:last-of-type{
+.navegador-footer a:last-of-type {
   margin-right: 0;
 }
 .logo-footer {
