@@ -56,12 +56,17 @@ p {
   margin-top: 1rem;
   margin: auto;
 }
-
-@media (max-width: 600px) {
-  .linea-media::after {
-    width: 100%;
-  }
+.linea-corta::after {
+  content: "";
+  display: block;
+  width: 30rem;
+  height: 0.2rem;
+  background-color: var(--turquoise);
+  margin-top: 1rem;
+  margin: auto;
 }
+
+
 
 .contenedor {
   max-width: 80%;
@@ -264,7 +269,7 @@ HERO SECTION
   justify-content: center;
 }
 
-/** SOBRE NOSOYTOS **/
+/** SOBRE NOSOTROS **/
 
 .nosotros-content {
   display: flex;
@@ -275,8 +280,46 @@ HERO SECTION
   align-items: center;
 }
 
-.parrafo-nosotros {
+.parrafo-descripcion {
   margin: 1rem auto;
   width: 70%;
   
+}
+
+/**OBRAS**/
+
+.section-obras{
+  display: flex;
+  justify-content: space-between;
+}
+.section-obras img {
+  width: 45rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**MEDIA QUERY**/
+
+@media (max-width: 600px) {             /*linea movile*/
+  .linea-media::after {
+    width: 100%;
+  }
 }
