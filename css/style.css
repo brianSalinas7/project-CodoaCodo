@@ -301,6 +301,8 @@ HERO SECTION
   width: 45rem;
 }
 
+.animated {
+}
 /**MEDIA QUERY**/
 
 @media (max-width: 600px) {

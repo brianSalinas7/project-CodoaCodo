@@ -32,6 +32,11 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./node_modules/animate.css/animate.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <title>| Alum-Glass</title>
   </head>
   <body>
@@ -125,7 +130,7 @@
         <h2 class="centrar-texto fw-300 linea-media margin-section">
           Diversidad en perfileria
         </h2>
-        <div class="perfileria margin-top5 row">
+        <div class="perfileria margin-top5 row animated">
           <img class="col-md-3" src="./img/modena.jpg" alt="modena" />
           <p class="col-md-9">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -134,7 +139,7 @@
             commodi
           </p>
         </div>
-        <div class="perfileria margin-top5 row">
+        <div class="perfileria margin-top5 row animated">
           <img
             class="col-md-3"
             src="./img/piel de vidrio.jfif"
@@ -147,7 +152,7 @@
             commodi
           </p>
         </div>
-        <div class="perfileria margin-top5 row">
+        <div class="perfileria margin-top5 row animated">
           <img class="col-md-3" src="./img/herrero.jpg" alt="linea-herrero" />
           <p class="col-md-9">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -186,6 +191,25 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(document).ready(function () {
+        function isScrolledIntoView(elem) {
+          var docViewTop = $(window).scrollTop();
+          var docViewBottom = docViewTop + $(window).height()+400;
 
+          var elemTop = $(elem).offset().top;
+          var elemBottom = elemTop + $(elem).height();
+
+          return elemBottom <= docViewBottom && elemTop >= docViewTop;
+        }
+        $(window).scroll(function () {
+          $(".animated").each(function () {
+            if (isScrolledIntoView(this) === true) {
+              $(this).addClass("animate__animated animate__slideInLeft");
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
