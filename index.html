@@ -82,7 +82,7 @@
           >Conozca más</a
         >
       </section>
-      <section class="container-fluid" id="about-us">
+      <section class="container-fluid animate" id="about-us" style="opacity:0">
         <!--inicio seccion de iconos "sobre nosotros" -->
         <h2 class="centrar-texto fw-300 linea-media margin-section">
           Sobre Nosotros
@@ -195,7 +195,7 @@
       $(document).ready(function () {
         function isScrolledIntoView(elem) {
           var docViewTop = $(window).scrollTop();
-          var docViewBottom = docViewTop + $(window).height()+400;
+          var docViewBottom = docViewTop + $(window).height()+300;
 
           var elemTop = $(elem).offset().top;
           var elemBottom = elemTop + $(elem).height();
@@ -206,6 +206,11 @@
           $(".animated").each(function () {
             if (isScrolledIntoView(this) === true) {
               $(this).addClass("animate__animated animate__slideInLeft");
+            }
+          });
+          $(".animate").each(function () {
+            if (isScrolledIntoView(this) === true) {
+              $(this).addClass("animate__animated animate__fadeIn");
             }
           });
         });
