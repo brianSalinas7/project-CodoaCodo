@@ -12,6 +12,7 @@
   --dark-blue: #132235;
   --booton-blue: #00587a;
   --turquoise: #6ddad3;
+  --active-color: #cefd75;
   --white: #ffffff;
   --shadow: #333;
 }
@@ -66,8 +67,6 @@ p {
   margin: auto;
 }
 
-
-
 .contenedor {
   max-width: 80%;
   margin: auto;
@@ -75,7 +74,7 @@ p {
 .margin-section {
   margin-top: 10rem;
 }
-.margin-section-bottom{
+.margin-section-bottom {
   margin-bottom: 10rem;
 }
 .margin-top5 {
@@ -110,8 +109,15 @@ p {
 .nav-link {
   font-size: 1.8rem !important;
   color: var(--white) !important;
-  font-weight: 450;
+  font-weight: 450 !important;
+  text-decoration: none;
 }
+
+.nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
 .nav-link:hover {
   color: var(--turquoise) !important;
 }
@@ -283,12 +289,11 @@ HERO SECTION
 .parrafo-descripcion {
   margin: 1rem auto;
   width: 70%;
-  
 }
 
 /**OBRAS**/
 
-.section-obras{
+.section-obras {
   display: flex;
   justify-content: space-between;
 }
@@ -296,29 +301,10 @@ HERO SECTION
   width: 45rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**MEDIA QUERY**/
 
-@media (max-width: 600px) {             /*linea movile*/
+@media (max-width: 600px) {
+  /*linea movile*/
   .linea-media::after {
     width: 100%;
   }
