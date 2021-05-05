@@ -183,7 +183,7 @@ HERO SECTION
 */
 .bg-hero {
   width: 100%;
-  height: 500px;
+  height: 600px;
   background-image: -moz-linear-gradient(top, #132235, rgba(255, 252, 179, 0)),
     url("/img/hero.jpeg");
   background-image: -o-linear-gradient(top, #132235, rgba(255, 252, 179, 0)),
