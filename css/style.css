@@ -1,6 +1,6 @@
 /*RESET*/
 
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200,500&display=swap");
 
 * {
   margin: 0;
@@ -109,8 +109,8 @@ p {
 .nav-link {
   font-size: 1.8rem !important;
   color: var(--white) !important;
-  font-weight: 450 !important;
   text-decoration: none;
+  font-weight: 300;
 }
 
 .nav-link.active {
@@ -138,6 +138,7 @@ p {
 .icon {
   flex-basis: calc(33.3% -1rem);
   text-align: center;
+  font-weight: 700;
 }
 
 .icon i {
@@ -176,6 +177,60 @@ p {
 .contenido-trabajos a:hover {
   color: var(--turquoise);
   background-color: var(--dark-blue);
+}
+
+.card-header h4 {
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.card {
+  border-radius: 8px !important;
+}
+
+.card-body p {
+  font-size: 15px !important;
+  font-weight: 200;
+  font-family: "Lato", sans-serif;
+}
+
+.card-body label {
+  font-size: 15px;
+  font-weight: 200;
+  font-family: "Lato", sans-serif;
+}
+
+.card-body div {
+  margin-bottom: 8px;
+}
+
+.boton-contacto {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  width: 300px;
+  padding: 5px;
+  border: none;
+  margin-top: 0.5em;
+}
+
+.boton-contacto:hover {
+  color: var(--turquoise);
+  background-color: var(--dark-blue);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+input {
+  font-size: 13px !important;
+}
+
+textarea {
+  font-size: 13px !important;
 }
 
 /*
@@ -231,6 +286,7 @@ HERO SECTION
 .perfileria {
   display: flex;
   justify-content: space-around;
+  font-weight: 300;
 }
 
 .perfileria p {
@@ -301,8 +357,6 @@ HERO SECTION
   width: 45rem;
 }
 
-.animated {
-}
 /**MEDIA QUERY**/
 
 @media (max-width: 600px) {
