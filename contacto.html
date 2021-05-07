@@ -8,20 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <!--GOOGLE FONT-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300,700&display=swap" rel="stylesheet">
     <!--Bootstrap linked-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <!--Linkeado de Stylesheet CSS-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/icon-favicon.ico" type="image/x-icon">
-    <title>| Alum-Glass </title>
+    <title>Alum-Glass | Contacto</title>
 </head>
 <body>
     <header>
         <!--Navegador-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-light ">
             <div class="container-fluid">
-  
               <a class="navbar-brand" href="/"><img class="logo-header" src="./img/logo-header.png" alt=""></a>
               <button class="navbar-toggler bd-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,7 +38,65 @@
             </div>
           </nav>
     </header>
-    <main>   
+    <main>
+    <section id="contact" class="container-fluid" style="height: 70vh !important">
+      <div class="row p-3">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <h4>Contacto</h4>
+            </div>
+            <div class="card-body">
+              <form method="POST" action="formspree">
+                <div class="row align-middle">
+                  <label for="nombre" class="col-sm-3 col-form-label">Nombre y Apellido</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="nombre" name="nombre">
+                  </div>
+                </div>
+                <div class="row align-middle">
+                  <label for="email" class="col-sm-3 col-form-label">Email</label>
+                  <div class="col-sm-9">
+                    <input type="email" class="form-control" id="email" name="email">
+                  </div>
+                </div>
+                <div class="row align-middle">
+                  <label for="telefono" class="col-sm-3 col-form-label">Teléfono</label>
+                  <div class="col-sm-9">
+                    <input type="number" class="form-control" id="telefono" name="telefono">
+                  </div>
+                </div>
+                <div class="row">
+                  <label for="consulta">Consulta</label>
+                  <div class="p-2">
+                    <textarea class="form-control" style="resize: none;" rows="5" name="consulta"></textarea>
+                  </div>
+                </div>
+                  <button type="submit" class="boton boton-color1 boton-contacto float-end">Enviar</button>
+                </form>
+              </form>
+            </div>
+          </div>
+          <div class="card mt-3">
+            <div class="card-body">
+              Desarrollado por Brian Salinas y Exequiel Schvartz. Comisión 2116 - Erica Gentilini
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <p><b>Dirección:</b> Brandsen 805, C1161 CABA </p>
+              <p><b>Teléfono:</b> (011) 5777-1200 </p>
+              <p><b>Email:</b> <a href="mailto:infosocios@bocajuniors.com.ar">infosocios@bocajuniors.com.ar</a></p>
+              <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13131.02320237945!2d-58.3647563!3d-34.6356109!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ca5b2748858b40d!2sEstadio%20Alberto%20J.%20Armando!5e0!3m2!1ses-419!2sar!4v1620426590824!5m2!1ses-419!2sar" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>   
       </main>
       <footer class="background-footer">
         <div class="footer contenedor" >
