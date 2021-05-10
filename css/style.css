@@ -24,6 +24,7 @@ html {
 body {
   font-family: "Lato", sans-serif;
   line-height: 2;
+  height: 100vh;
 }
 
 /**GLOBAL**/
@@ -79,6 +80,9 @@ p {
 }
 .margin-top5 {
   margin: 5rem auto 5rem auto;
+}
+.margen-contact {
+  margin-bottom: 4.8rem;
 }
 
 .boton {
@@ -356,6 +360,76 @@ HERO SECTION
 .section-obras img {
   width: 45rem;
 }
+
+
+/**SERVICIOS**/
+
+.cards-servicio {
+  width: 1300px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+.card-servicio {
+  width: 40rem;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+}
+.card-servicio:hover{
+  transform: translateY(-15px);
+  -webkit-transform: translateY(-15px);
+  -moz-transform: translateY(-15px);
+  -ms-transform: translateY(-15px);
+  -o-transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+}
+.boton-servicio:hover {
+  color: var(--turquoise);
+  background-color: var(--dark-blue);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.card-servicio h4 {
+  font-weight: 600;
+  margin: 2rem;
+  
+}
+.card-servicio p {
+  font-size: 1.5rem;
+}
+.iconos-servicio {
+  display: flex;
+  justify-content: center;
+}
+.icon-servicio {
+  font-size: 8rem;
+  color: var(--dark-blue);
+}
+.icon-service {
+  text-align: center;
+
+}
+.icon-service h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2.2rem;
+  color: var(--dark-blue);
+}
+
+
+
+
+
+
+
 
 /**MEDIA QUERY**/
 
