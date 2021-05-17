@@ -244,15 +244,15 @@ HERO SECTION
   width: 100%;
   height: 600px;
   background-image: -moz-linear-gradient(top, #132235, rgba(255, 252, 179, 0)),
-    url("/img/hero.jpeg");
+    url("/img/hero.jpeg") !important;
   background-image: -o-linear-gradient(top, #132235, rgba(255, 252, 179, 0)),
-    url("/img/hero.jpeg");
+    url("/img/hero.jpeg") !important;
   background-image: -webkit-linear-gradient(
       top,
       #132235,
       rgba(255, 252, 179, 0)
     ),
-    url("/img/hero.jpeg");
+    url("/img/hero.jpeg") !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -361,25 +361,22 @@ HERO SECTION
   width: 45rem;
 }
 
-
 /**SERVICIOS**/
 
 .cards-servicio {
-  width: 1300px;
   margin: auto;
   display: flex;
   text-align: center;
   justify-content: space-around;
 }
 .card-servicio {
-  width: 40rem;
   transition: 0.25s;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -ms-transition: 0.25s;
   -o-transition: 0.25s;
 }
-.card-servicio:hover{
+.card-servicio:hover {
   transform: translateY(-15px);
   -webkit-transform: translateY(-15px);
   -moz-transform: translateY(-15px);
@@ -400,7 +397,6 @@ HERO SECTION
 .card-servicio h4 {
   font-weight: 600;
   margin: 2rem;
-  
 }
 .card-servicio p {
   font-size: 1.5rem;
@@ -415,7 +411,6 @@ HERO SECTION
 }
 .icon-service {
   text-align: center;
-
 }
 .icon-service h4 {
   font-size: 2rem;
@@ -423,13 +418,6 @@ HERO SECTION
   margin: 2.2rem;
   color: var(--dark-blue);
 }
-
-
-
-
-
-
-
 
 /**MEDIA QUERY**/
 

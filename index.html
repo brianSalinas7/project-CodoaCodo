@@ -82,7 +82,7 @@
           >Conozca más</a
         >
       </section>
-      <section class="container-fluid animate" id="about-us" style="opacity:0">
+      <section class="container-fluid" id="about-us">
         <!--inicio seccion de iconos "sobre nosotros" -->
         <h2 class="centrar-texto fw-300 linea-media margin-section">
           Sobre Nosotros
@@ -174,7 +174,7 @@
             ><img class="logo-header" src="./img/logo-header.png" alt=""
           /></a>
         </div>
-        <div class="col-md-5 align-items-center">
+        <div class="col-md-5 text-center align-items-center">
           <nav class="navbar-nav navegador-footer">
             <a class="nav-link" href="inicio.html">Inicio</a>
             <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
@@ -185,17 +185,17 @@
         </div>
       </div>
     </footer>
-    <!--Script de Bootstrap-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"
-    ></script>
+        <!--Script de Bootstrap-->
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+  crossorigin="anonymous"
+></script>
     <script>
       $(document).ready(function () {
         function isScrolledIntoView(elem) {
           var docViewTop = $(window).scrollTop();
-          var docViewBottom = docViewTop + $(window).height()+300;
+          var docViewBottom = docViewTop + $(window).height() + 300;
 
           var elemTop = $(elem).offset().top;
           var elemBottom = elemTop + $(elem).height();
