@@ -371,6 +371,7 @@ HERO SECTION
 }
 .card-servicio {
   transition: 0.25s;
+  padding: 0!important;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -ms-transition: 0.25s;
